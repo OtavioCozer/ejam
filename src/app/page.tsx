@@ -10,7 +10,7 @@ export default function Home() {
               src='/checkmark.svg'
               alt="Checkmark"
               width={19}
-              height={19}              
+              height={19}
             /><p>30-DAY SATISFACTION GUARANTEE</p>
           </li>
           <li className='hidden xl:flex flex-row items-center justify-between gap-1'>
@@ -44,65 +44,68 @@ export default function Home() {
       </header>
 
       <main>
-        <div className='flex flex-row justify-between sm:mx-32 sm:mt-8 sm:mb-4'>
+        <div className='flex flex-row justify-between sm:mx-32 sm:mt-8 sm:mb-4 p-3'>
           <Image
             src='/clarifion-logo-1.png'
             alt="Clarifion Logo"
             width={192}
             height={36}
-            className='inline'
+            className='w-[107px] h-[20px] max-w-[107px] xl:w-[192px] xl:h-[36px] xl:max-w-[192px] self-center'
           />
-          <div className='w-[202px] flex flex-row justify-between'>
+          <div className='w-[202px] flex flex-row justify-end gap-2'>
             <Image
               src='/mcafee-logo-1.png'
               alt="McAfee Logo"
               width={88}
               height={32}
-              className='inline'
+              className='w-[44px] h-[16px] max-w-[44px] xl:w-[88px] xl:h-[32px] xl:max-w-[82px] self-center'
             />
             <Image
               src='/norton-logo-1.png'
               alt="Norton Logo"
               width={88}
               height={32}
-              className='inline'
+              className='w-[41px] h-[16px] max-w-[41px] xl:w-[88px] xl:h-[32px] xl:max-w-[82px] self-center'
             />
           </div>
         </div>
-        <div>
-          <h1 className='w-fit m-auto text-[48px]'>Wait ! your order in progress.</h1>
-          <h2 className='w-fit m-auto text-[24px] text-[#4D5254]'>Lorem ipsum dolor sit amet, consectetur adipiscing </h2>
+        <div className='text-center'>
+          <h1 className='w-fit m-auto text-[32px] xl:text-[48px]'>Wait ! your order in progress.</h1>
+          <h2 className='w-fit m-auto text-[16px] xl:text-[24px] text-[#4D5254]'>Lorem ipsum dolor sit amet, consectetur adipiscing </h2>
         </div>
 
-        <div className='mx-32 mt-14'>
+        <div className='mx-4 xl:mx-32 mt-14'>
           <ul className='flex flex-row justify-between text-xl'>
             <li className='flex flex-col xl:flex-row items-center gap-5'>
               <Image
                 src='/green-step.png' alt='Ok' width={40} height={40}
-              /><p><span className='hidden xl:block'>Step 1 : </span>Cart Review</p></li>
+              /><p className='text-[12px] xl:text-[20px]'><span className='hidden xl:inline'>Step 1 : </span>Cart Review</p></li>
             <li className='flex flex-col xl:flex-row items-center gap-5'>
               <Image
                 src='/green-step.png' alt='Ok' width={40} height={40}
-              /><p><span className='hidden xl:block'>Step 2 : </span>Checkout</p></li>
+              /><p className='text-[12px] xl:text-[20px]'><span className='hidden xl:inline'>Step 2 : </span>Checkout</p></li>
             <li className='flex flex-col xl:flex-row items-center gap-5'>
               <Image
                 src='/blue-step.png' alt='Current' width={40} height={40}
-              /><p><span className='hidden xl:block'>Step 3 : </span>Special Offer</p></li>
+              /><p className='text-[12px] xl:text-[20px]'><span className='hidden xl:inline'>Step 3 : </span>Special Offer</p></li>
             <li className='flex flex-col xl:flex-row items-center gap-5'>
               <Image
                 src='/next-step.png' alt='Next' width={40} height={40}
-              /><p><span className='hidden xl:block'>Step 4 : </span>Confirmation</p></li>
+              /><p className='text-[12px] xl:text-[20px]'><span className='hidden xl:inline'>Step 4 : </span>Confirmation</p></li>
           </ul>
         </div>
 
         <div className='mx-28 mt-10 flex xl:flex-row flex-col justify-center bg-[#FAFAFA]'>
           <div className='flex flex-col m-10'>
+            <h1 className='text-[32px] xl:hidden block w-[350px] self-center'>
+              <span className='text-[#2C7EF8]'>ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className='text-[#2C7EF8]'>$14 each</span> ($84.00 total!)
+            </h1>
             <Image
               src='/offer.png'
               alt='Offer'
               width={575}
               height={591}
-              className='w-[575px] h-[591px] max-w-[575px] self-center'
+              className='w-[320px] h-[328px] max-w-[320px] xl:w-[575px] xl:h-[591px] xl:max-w-[575px] self-center'
             />
 
             <div className='hidden xl:block'>
@@ -116,7 +119,7 @@ export default function Home() {
                   />
                 </div>
 
-                <div className='flex flex-col  mx-3 mt-2'>
+                <div className='flex flex-col mx-3 mt-2'>
                   <div className='flex flex-row items-start gap-1'>
                     <Image
                       src='/star.svg'
@@ -165,8 +168,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='flex flex-col m-10 w-[550px] self-center'>
-            <h1 className='text-[32px] w-[550px] block'>
+          <div className='flex flex-col m-10 w-[320px] xl:w-[550px] self-center'>
+            <h1 className='text-[32px] hidden xl:block'>
               <span className='text-[#2C7EF8]'>ONE TIME ONLY</span> special price for 6 extra Clarifion for only <span className='text-[#2C7EF8]'>$14 each</span> ($84.00 total!)
             </h1>
             <div className='flex flex-row justify-between mt-4'>
@@ -260,7 +263,7 @@ export default function Home() {
               /><p><span className='font-bold text-black'>Perfect for every room</span> in all types of places.</p>
             </div>
             <div className='flex flex-row items-center  bg-[#EDF3FD] h-14'>
-              <div className='mx-3 flex justify-center items-center w-7 h-7 rounded-full	bg-[#2C7EF8]'>
+              <div className='shrink-0 mx-3 flex justify-center items-center w-7 h-7 rounded-full	bg-[#2C7EF8]'>
                 <p>%</p>
               </div>
               <div>
@@ -270,22 +273,24 @@ export default function Home() {
             <div className='h-14 flex justify-center items-center rounded-full bg-[#59AE43] text-white text-xl font-bold'>
               <p>Yes - Claim my discount &rarr;</p>
             </div>
-            <div className='p-4 my-3 border-[#CFCFCF] border-2 h-8 text-[12px] text-[#4D5254] flex flex-row justify-between items-center'>
-              <div>
-                <p>Free Shiping</p>
+            <div className='p-4 my-3 border-[#CFCFCF] border-2 text-[12px] text-[#4D5254] flex flex-col h-fit xl:flex-row justify-between items-center'>
+              <div className='flex flex-row gap-4'>
+                <div>
+                  <p>Free Shiping</p>
+                </div>
+                <div className='border-[#CFCFCF] h-4 border-l-[1px] hidden xl:block'></div>
+                <div className='flex flex-row justify-center items-center gap-1'>
+                  <Image
+                    src='/lock.svg'
+                    alt='Lock'
+                    width={12}
+                    height={12}
+                  />
+                  <p>Secure 256-bit SSL encryption.</p>
+                </div>
               </div>
-              <div className='border-[#CFCFCF] h-4 border-l-[1px]'></div>
-              <div className='flex flex-row justify-center items-center gap-1'>
-                <Image
-                  src='/lock.svg'
-                  alt='Lock'
-                  width={12}
-                  height={12}
-                />
-                <p>Secure 256-bit SSL encryption.</p>
-              </div>
-              <div className='border-[#CFCFCF] h-4 border-l-[1px]'>
-              </div>
+              <div className='border-[#CFCFCF] h-4 border-l-[1px] hidden xl:block'></div>
+              <div className='border-[#CFCFCF] w-full my-3 border-b-[1px] xl:hidden block'></div>
               <div>
                 <Image
                   src='/cards.png'
@@ -315,7 +320,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className='flex flex-col p-3 xl:flex-row justify-between bg-[#252F3D] h-[88px] text-white px-20'>
+      <footer className='flex flex-col p-3 xl:flex-row justify-between bg-[#252F3D] h-[102px] xl:h-[88px] text-white px-20 text-[12px] xl:text-[16px]'>
         <div className='flex flex-row items-center justify-center xl:justify-around gap-3'>
           <p>Copyright (c) 2023</p>
           <div className='h-3 border-l-[1px]'></div>
